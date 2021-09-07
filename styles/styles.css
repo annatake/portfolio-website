@@ -1,0 +1,390 @@
+/* Custom CSS Variables */
+:root {
+    --bg-color: rgba(246, 242, 237, 1);
+    --main-color: #2507eb ;
+    --dark-mode-bg-color: #25225e;
+    --dark-mode-main-color: rgba(246, 242, 237, 1);
+    --hover-color: #8f80f3;
+}
+
+/* HTML Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    color: var(--main-color);
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+
+body {
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/**** NAVIGATION BAR ****/
+
+.navbar {
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 10vh;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: lowercase;
+    letter-spacing: .05em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    margin-left: 8%;
+}
+
+.nav-item {
+    margin-right: 35px;
+}
+
+a {
+    color: var(--main-color);
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+a:hover {
+    color: var(--hover-color);
+    transition: .3s ease-out;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.dark-light-mode-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.uil-brightness {
+    display: none;
+}
+
+
+/**** MAIN CONTENT ****/
+
+.main-container {
+    max-width: 1400px;
+    margin: 0 80px;
+}
+
+section {
+    padding-top: 100px;
+    transition: 0.7s ease;
+}
+
+#about-me {
+    padding-top: 200px;
+}
+
+.intro-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    text-transform: lowercase;
+    text-align: left;
+    width: auto;
+}
+
+.intro {
+    height: auto;
+    width: 75%;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.75rem;
+}
+
+.socials::before {
+    height: 2px;
+    width: 60%;
+    display: block;
+    content: "";
+    background-color: var(--main-color);
+    margin: auto 0px;
+}
+
+.title {
+    font-size: 2.5em;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/**** SKILLS SECTION ****/
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+    padding: 0 20px 20px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+.skill-list {
+    border-radius: 3px;
+}
+
+.skill i {
+    font-size: 5rem;
+}
+
+.skill-list {
+    list-style: none;
+    margin-top: 8px;
+    line-height: 1.5rem;
+}
+
+/**** EXPERIENCE & PROJECTS SECTION ****/
+
+.exp, .project {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px 40px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+.job-title, .project-title {
+    font-size: 22px;
+}
+
+.job-company, .project-type {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--hover-color);
+}
+
+.job-range, .project-range {
+    margin: 5px 0 10px 0;
+}
+
+.desc-item, .project-item {
+    position: relative;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 25px;
+    z-index: -1;
+}
+
+.desc-item i, .project-item i {
+    position: absolute;
+    left: 0px;
+}
+
+.project h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 0px;
+    font-size: 2rem;
+}
+
+.toggle-open {
+    display: none;
+}
+
+.toggle-close:hover {
+    color: var(--hover-color);
+}
+
+.project-footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech-stack ul {
+    display: flex;
+}
+
+.tech-items {
+    color: var(--hover-color);
+    list-style: none;
+    margin-right: 25px;
+    padding: 5px 8px;
+    border: 2px solid var(--hover-color);
+    border-radius: 8px;
+    box-shadow: 3px 3px;
+}
+
+.project-github a {
+    font-size: 2.5rem;
+}
+
+/**** FOOTER ****/
+
+footer {
+    margin: 100px 0 20px 0;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/**** MEDIA QUERIES ****/
+
+@media screen and (max-width: 830px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    .name {
+        margin: 0 30px 0 10px;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--bg-color);
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        margin-left: 3%;
+    }
+
+    .dark-light-mode-btn {
+        margin-left: 10%;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .section-pushed {
+        transform: translateX(-200px);
+        
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(35deg) scale(1) translateY(2px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(-35deg) scale(1) translateY(-2px);
+    }
+}
+
+/* Format long lines into two lines */
+@media screen and (max-width: 405px) {
+
+    .navbar {
+        height: 15vh;
+    }
+
+    .burger {
+        margin-right: 5%;
+    }
+
+    .intro-title {
+        font-size: 2.5em;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .site-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+}
