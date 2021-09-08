@@ -7,10 +7,17 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     const sections = document.querySelectorAll('section');
 
+    // Prevents nav transition from appearing when resizing to mobile view
+    window.addEventListener('resize', () => {
+        if(window.innerWidth > 875) {
+            nav.classList.remove('nav-transition');
+        }
+    }, false);
 
     burger.addEventListener('click', () => {
         // Toggle nav
         nav.classList.toggle('nav-active');
+        nav.classList.add('nav-transition');
 
         // Toggle sections
         sections.forEach( section => {
@@ -65,7 +72,6 @@ const toggleDarkMode = () => {
     const darkModeToggleBtn = document.querySelector(".dark-light-mode-btn");
 
     darkModeToggleBtn.addEventListener("click", function(){
-        console.log(this);
         document.body.classList.toggle("dark-theme");
     });
 
