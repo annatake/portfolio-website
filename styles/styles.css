@@ -22,10 +22,13 @@ body.dark-theme {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     color: var(--main-color);
-    scroll-behavior: smooth;
     background-color: var(--bg-color);
     overflow-y: auto;
     font-family: 'Poppins', sans-serif;
