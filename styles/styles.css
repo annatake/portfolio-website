@@ -215,7 +215,7 @@ section {
 }
 
 .job-range, .project-range {
-    margin: 5px 0 10px 0;
+    margin: 2px 0 10px 0;
 }
 
 .desc-item, .project-item {
@@ -265,14 +265,22 @@ section {
     color: var(--hover-color);
     list-style: none;
     margin-right: 25px;
-    padding: 5px 8px;
+    padding: 5px 10px;
     border: 2px solid var(--hover-color);
     border-radius: 8px;
     box-shadow: 3px 3px;
 }
 
-.project-github a {
+.project-links {
+    height: 100%;
+}
+
+.project-links a {
     font-size: 2.5rem;
+}
+
+.project-links span {
+    margin-left: 10px;
 }
 
 /**** FOOTER ****/

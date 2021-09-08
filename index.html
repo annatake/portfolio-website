@@ -21,6 +21,7 @@
 
 <body>
     <div class="site-container">
+        <!-- Nav Bar -->
         <nav class="navbar">
             <h1 class="name">anna takeuchi</h1>
             <ul class="nav-links">
@@ -35,6 +36,7 @@
                 <i class="uil uil-brightness"></i>
             </button>
 
+            <!-- Burger Menu for Mobile -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -45,7 +47,6 @@
 
         <main class="main-container">
             <section id="about-me">
-
                 <h2 class="intro-title">Hi, I'm Anna!</h2>
 
                 <p class="intro">
@@ -59,6 +60,7 @@
                 </div>
             </section>
 
+            <!-- Skills -->
             <section id="skills">
                 <h2 class="title">Skills</h2>
                 <div class="skills-container">
@@ -98,6 +100,7 @@
                 </div>
             </section>
 
+            <!-- Work Experience -->
             <section id="experience">
                 <h2 class="title">Experience</h2>
 
@@ -106,6 +109,7 @@
                         <span class="job-title">Software QA Analyst Co-op</span>
                         <span class="job-company">@ Copperleaf Technologies</span>
                     </h3>
+                    <p class="job-team">Customer Delivery Team</p>
                     <p class="job-range">Jan - Dec 2020</p>
                     <div class="job-desc">
                         <ul>
@@ -130,6 +134,7 @@
                 </div>
             </section>
 
+            <!-- Projects -->
             <section id="projects">
                 <h1 class="title">Projects</h1>
 
@@ -167,29 +172,172 @@
                                 <li class="tech-items">Jest</li>
                             </ul>
                         </span>
-                        <span class="project-github">
-                            <a href="https://github.com/annatake/weather-app" target="_blank"><i class="uil uil-github"></i></a>
-                        </span>
+                        <div class="project-links">
+                            <span class="project-github">
+                                <a href="https://github.com/annatake/weather-app" target="_blank"><i class="uil uil-github"></i></a>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project">
-                    <h3>TCP Server & Client</h3>
+                    <h3>
+                        <span class="project-title">TCP Server & Client</span>
+                        <span class="toggle-icon">
+                            <i class="uil uil-plus-square toggle-open"></i>
+                            <i class="uil uil-minus-square-full toggle-close"></i>
+                        </span>
+                    </h3>
+                    <span class="project-type">Academic</span>
+                    <p class="project-range">Mar - Apr 2021</p>
+                    <div class="project-desc">
+                        <ul>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Implemented a simplified Netcat clone using socket programming in C with a feature that allows server to connect to multiple clients using synchronous I/O multiplexing and multithreading
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-stack">
+                            <ul>
+                                <li class="tech-items">C</li>
+                                <li class="tech-items">Socket Programming</li>
+                                <li class="tech-items">TCP/IP</li>
+                            </ul>
+                        </span>
+                    </div>
                 </div>
+
+
                 <div class="project">
-                    <h3>Rock-Paper-Scissors Game</h3>
+                    <h3>
+                        <span class="project-title">Rock-Paper-Scissors Game</span>
+                        <span class="toggle-icon">
+                            <i class="uil uil-plus-square toggle-open"></i>
+                            <i class="uil uil-minus-square-full toggle-close"></i>
+                        </span>
+                    </h3>
+                    <span class="project-type">Personal</span>
+                    <p class="project-range">May 2021</p>
+                    <div class="project-desc">
+                        <ul>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Created a fun UI for a rock-paper-scissors game using HTML, CSS, and vanilla JavaScript
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-stack">
+                            <ul>
+                                <li class="tech-items">HTML/CSS</li>
+                                <li class="tech-items">JavaScript</li>
+                            </ul>
+                        </span>
+                        <div class="project-links">
+                            <span class="project-github">
+                                <a href="https://github.com/annatake/rock-paper-scissors" target="_blank"><i class="uil uil-github"></i></a>
+                            </span>
+                            <span class="project-demo">
+                                <a href="https://annatake.github.io/rock-paper-scissors" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="project">
-                    <h3>Todo List</h3>
+                    <h3>
+                        <span class="project-title">Todo List</span>
+                        <span class="toggle-icon">
+                            <i class="uil uil-plus-square toggle-open"></i>
+                            <i class="uil uil-minus-square-full toggle-close"></i>
+                        </span>
+                    </h3>
+                    <span class="project-type">Personal</span>
+                    <p class="project-range">May 2021</p>
+                    <div class="project-desc">
+                        <ul>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                A simple to-do list made in HTML, CSS, and vanilla JavaScript
+                            </li>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Added creative touches by experimenting with CSS filters and gradients to achieve a glassmorphism style
+                            </li>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Converted to-do list data to JSON, utilized local storage to persist and update to-do items
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-stack">
+                            <ul>
+                                <li class="tech-items">HTML/CSS</li>
+                                <li class="tech-items">JavaScript</li>
+                            </ul>
+                        </span>
+                        <div class="project-links">
+                            <span class="project-github">
+                                <a href="https://github.com/annatake/to-do-list" target="_blank"><i class="uil uil-github"></i></a>
+                            </span>
+                            <span class="project-demo">
+                                <a href="https://annatake.github.io/to-do-list/" target="_blank"><i class="uil uil-external-link-alt"></i></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="project">
-                    <h3>Food Delivery Database GUI</h3>
+                    <h3>
+                        <span class="project-title">Food Delivery Database GUI</span>
+                        <span class="toggle-icon">
+                            <i class="uil uil-plus-square toggle-open"></i>
+                            <i class="uil uil-minus-square-full toggle-close"></i>
+                        </span>
+                    </h3>
+                    <span class="project-type">Academic</span>
+                    <p class="project-range">May 2021</p>
+                    <div class="project-desc">
+                        <ul>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Collaborated in a team of 3 to implement a Java application that provides a GUI for the user to run SQL queries of the data from a fictional food delivery service
+                            </li>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Designed ER diagram for mapping out relationships between entities of the database
+                            </li>
+                            <li class="project-item">
+                                <i class="uil uil-angle-double-right"></i>
+                                Utilized Java's JDBC API to connect the app with the UBC CS department's Oracle DBMS, and designed GUI with Java Swing
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-stack">
+                            <ul>
+                                <li class="tech-items">Java</li>
+                                <li class="tech-items">Java Swing</li>
+                                <li class="tech-items">SQL</li>
+                                <li class="tech-items">JDBC API</li>
+                            </ul>
+                        </span>
+                        <div class="project-links">
+                            <span class="project-github">
+                                <a href="https://github.com/annatake/FoodDelivery-UI" target="_blank"><i class="uil uil-github"></i></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
     </div>
 
-    <footer><a href="" target="_blank">Designed and Built with ♥ by Anna Takeuchi © 2021</a></footer>
+    <!-- Footer -->
+    <footer><a href="https://github.com/annatake/portfolio-website" target="_blank">Designed and Built with ♥ by Anna Takeuchi © 2021</a></footer>
 
     <!-- JavaScript -->
     <script src="scripts/main.js"></script>
