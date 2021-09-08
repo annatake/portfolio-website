@@ -236,17 +236,27 @@ section {
     z-index: 1;
 }
 
+.project-desc {
+    display: none;
+}
+
+.collapsible {
+    border: none;
+    background-color: transparent;
+    color: var(--main-color);
+}
+
 .toggle-icon {
     position: absolute;
     right: 0px;
     font-size: 2rem;
 }
 
-.toggle-open {
+.toggle-close {
     display: none;
 }
 
-.toggle-close:hover {
+.toggle-close:hover, .toggle-open:hover {
     color: var(--hover-color);
 }
 

@@ -1,3 +1,6 @@
+/*
+ *  Slides the mobile navbar menu
+ */ 
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -29,14 +32,36 @@ const navSlide = () => {
 
 }
 
-// function smoothScroll(target, duration) {
-//     let target = document.querySelector(target);
-//     let targetPosition = target.getBoundingClientRect();
-// }
+/*
+ *  Toggles the collapsible accordion for project descriptions
+ */ 
+const toggleCollapsible = () => {
+    const toggleBtns = document.querySelectorAll('.collapsible');
+    
+    for (let i = 0; i < toggleBtns.length; i++) {
+        toggleBtns[i].addEventListener("click", function(){
+            this.classList.toggle("active");
+            let projContainer = this.parentNode.parentNode;
+            const projDesc = projContainer.querySelector(".project-desc");
+
+            if (projDesc.style.display === "block") {
+                projDesc.style.display = "none";
+                this.querySelector(".toggle-open").style.display = "block";
+                this.querySelector(".toggle-close").style.display = "none";
+            } else {
+                projDesc.style.display = "block";
+                this.querySelector(".toggle-open").style.display = "none";
+                this.querySelector(".toggle-close").style.display = "block";
+            }
+        })
+
+    }
+}
+
 
 const app = () => {
     navSlide();
-    // smoothScroll();
+    toggleCollapsible();
 }
 
 app();
