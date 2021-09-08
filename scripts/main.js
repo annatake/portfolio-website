@@ -53,15 +53,29 @@ const toggleCollapsible = () => {
                 this.querySelector(".toggle-open").style.display = "none";
                 this.querySelector(".toggle-close").style.display = "block";
             }
-        })
+        });
 
     }
+}
+
+/*
+ *  Toggles dark mode
+ */
+const toggleDarkMode = () => {
+    const darkModeToggleBtn = document.querySelector(".dark-light-mode-btn");
+
+    darkModeToggleBtn.addEventListener("click", function(){
+        console.log(this);
+        document.body.classList.toggle("dark-theme");
+    });
+
 }
 
 
 const app = () => {
     navSlide();
     toggleCollapsible();
+    toggleDarkMode();
 }
 
 app();
