@@ -11,7 +11,7 @@ body.dark-theme {
     --bg-color: #25225e;
     --main-color: rgb(233, 219, 207);
     --nav-bg-color: rgb(233, 219, 207);
-    --nav-font-color:  #25225e;
+    --nav-font-color:  #4540af;
     --hover-color: #8f80f3;
 }
 
@@ -320,6 +320,7 @@ footer a {
 
 /**** MEDIA QUERIES ****/
 
+/* Switch to burger menu */
 @media screen and (max-width: 875px) {
 
     body {
@@ -414,6 +415,12 @@ footer a {
     .main-container {
         margin: 0 50px;
     }
+
+    /* Experience section */
+    .job-company {
+        display: block;
+        margin-bottom: 5px;
+    }
     
     /* Skills section */
 
@@ -448,17 +455,70 @@ footer a {
     }
 }
 
+/* Tablet Screen */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 576px) {
+    .exp, .project {
+        width: 95%;
+    }
 
+}
+
+/* Large Mobile Screen */
+@media screen and (max-width: 590px) {
+
+    .skill {
+        width: 100%;
+    }
+
+    .exp, .project {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .project h3 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .project-title {
+        display: inline-block;
+        margin-right: 10px;
+        max-width: 220px;
+    }
+
+    .collapsible {
+        display: inline-block;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .toggle-icon {
+        
+        font-size: 1.8rem;
+    }
+
+
+    .tech-items {
+        margin-right: 10px;
+    }
+
+}
+
+/*  Mobile Screen */
+@media screen and (max-width: 425px) {
+    .project-title {
+        max-width: 200px;
+    }
 
 }
 
 /* Format long lines into two lines */
 @media screen and (max-width: 405px) {
 
-    .navbar {
-        height: 15vh;
+    .main-container {
+        margin: 0 25px;
     }
 
     .burger {
