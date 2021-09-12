@@ -9,9 +9,9 @@ body {
 
 body.dark-theme {
     --bg-color: #25225e;
-    --main-color: rgba(246, 242, 237, 1);
-    --nav-bg-color: rgba(246, 242, 237, 1);
-    --nav-font-color:  #2507eb;
+    --main-color: rgb(233, 219, 207);
+    --nav-bg-color: rgb(233, 219, 207);
+    --nav-font-color:  #25225e;
     --hover-color: #8f80f3;
 }
 
@@ -253,6 +253,13 @@ section {
     border: none;
     background-color: transparent;
     color: var(--main-color);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.dark-toggle:hover, .light-toggle:hover, .collapsible i:hover {
+    color: var(--hover-color);
+    transition: .3s ease-out;
 }
 
 .toggle-icon {
@@ -359,6 +366,10 @@ footer a {
         color: var(--nav-font-color);
     }
 
+    .nav-links a:hover {
+        color: var(--hover-color);
+    }
+
     .burger {
         display: block;
         margin-left: 3%;
@@ -373,7 +384,7 @@ footer a {
     }
 
     .section-pushed {
-        transform: translateX(-250px);
+        transform: translateX(-55%);
         
     }
 
@@ -464,6 +475,10 @@ footer a {
     .site-container {
         max-width: 1400px;
         margin: 0 auto;
+    }
+
+    .skill {
+        max-width: 300px;
     }
 
 }
