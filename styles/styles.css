@@ -500,7 +500,7 @@ footer a {
 
     .exp, .project {
         width: 100%;
-        padding: 20px;
+        padding: 20px 25px 30px 25px;
     }
 
     .project h3 {
@@ -535,6 +535,15 @@ footer a {
 
 /*  Extra breakpoint to rearrange project footer contents */
 @media screen and (max-width: 490px) {
+
+    .project {
+        padding-bottom: 22px;
+    }
+
+    .project-footer {
+        min-height: 75px;
+        margin-top: 15px;
+    }
 
     .tech-stack {
         display: inline-block;
