@@ -226,6 +226,10 @@ section {
     color: var(--hover-color);
 }
 
+.job-team {
+    font-weight: 600;
+}
+
 .job-range, .project-range {
     margin: 2px 0 10px 0;
 }
@@ -313,13 +317,17 @@ section {
 /**** FOOTER ****/
 
 footer {
-    margin: 100px 0 20px 0;
+    margin: 100px 10px 20px 10px;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
     font-size: 12px;
+}
+
+.scroll-up {
+    display: none;
 }
 
 /**** MEDIA QUERIES ****/
@@ -457,6 +465,17 @@ footer a {
     .tech-items {
         font-size: 14px;
     }
+
+    /* Footer */
+
+    footer {
+        margin-top: 75px;
+    }
+
+    .scroll-up {
+        display: block;
+        font-size: 2.75rem;
+    }
 }
 
 /* Tablet Screen */
@@ -512,6 +531,27 @@ footer a {
         margin-right: 10px;
     }
 
+}
+
+/*  Extra breakpoint to rearrange project footer contents */
+@media screen and (max-width: 490px) {
+
+    .tech-stack {
+        display: inline-block;
+    }
+
+    .tech-stack ul {
+        flex-wrap: wrap;
+        max-width: 250px;
+    }
+
+    .tech-items {
+        margin-bottom: 8px;
+    }
+
+    .project-links {
+        max-width: 40px;
+    }
 }
 
 /*  Large Mobile Screen */
