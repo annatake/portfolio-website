@@ -565,6 +565,11 @@ footer a {
 
 /*  Large Mobile Screen */
 @media screen and (max-width: 425px) {
+
+    .socials::before {
+        width: 40%;
+    }
+
     .project-title {
         max-width: 200px;
     }
