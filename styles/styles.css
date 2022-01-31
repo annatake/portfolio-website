@@ -284,7 +284,7 @@ section {
     color: var(--hover-color);
 }
 
-.project-footer {
+.project-footer, .exp-footer {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
@@ -540,7 +540,7 @@ footer a {
         padding-bottom: 22px;
     }
 
-    .project-footer {
+    .project-footer, .exp-footer {
         min-height: 75px;
         margin-top: 15px;
     }
