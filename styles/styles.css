@@ -227,7 +227,7 @@ section {
 }
 
 .job-team {
-    font-weight: 600;
+    margin: 10px 0 10px 0;
 }
 
 .job-range, .project-range {
@@ -491,6 +491,32 @@ footer a {
 
 }
 
+/*  Extra breakpoint to rearrange project footer contents */
+@media screen and (max-width: 1300px) {
+
+    .intro {
+        width: 100%;
+    }
+
+    .exp, .project {
+        width: 95%;
+    }
+
+    .tech-stack {
+        display: inline-block;
+    }
+
+    .tech-stack ul {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .tech-items {
+        margin-bottom: 8px;
+    }
+
+}
+
 /* Large Mobile Screen */
 @media screen and (max-width: 590px) {
 
@@ -525,7 +551,6 @@ footer a {
         
         font-size: 1.8rem;
     }
-
 
     .tech-items {
         margin-right: 10px;
